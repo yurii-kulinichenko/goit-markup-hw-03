@@ -26,6 +26,9 @@ body {
        max-width: 100%;
        height: auto;
    }
+   a {
+       display: block;
+   }
     .container {
         width: 1200px;
         margin: 0 auto;
@@ -216,14 +219,13 @@ color: var(--main-color);
 margin-bottom: 50px;
 }
 .work-list {
-    display: flex;
-    margin-right: -30px;
+    display: flex; 
+   }
+   
+   .work-list :not(:last-child) {
+ margin-right: 30px;
    }
 
-.work-list-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
-}
 .team {
     background: var(--main-background) ;
 }
@@ -273,9 +275,10 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--accent);
 margin-bottom: 20px;
+display:block;
 
 }
-.address-list:not(:last-child) {
+.address-list :not(:last-child) {
     margin-bottom: 9px;
 }
 .footer-address {
